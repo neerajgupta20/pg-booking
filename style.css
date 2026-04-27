@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.hero-img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Overlay effect */
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+/* Content above overlay */
+.hero-content {
+  z-index: 2;
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* Input responsive */
+.hero-content input {
+  max-width: 400px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .hero-img {
+    height: 80vh;
+  }
+}
+
+
+.card:hover {
+    transform: translateY(-5px); 
+    transition:0.3s;
+}
+.footer {
+    background:#111;
+     color:#fff; 
+     padding:40px 0;
+    }
